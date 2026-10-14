@@ -1,0 +1,13 @@
+{
+  "trailingSlash": "always",
+  "globalHeaders": {
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.google-analytics.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+  },
+  "routes": [
+    {"route": "/*.html", "headers": {"Cache-Control": "no-cache"}},
+    {"route": "/*.js", "headers": {"Cache-Control": "no-cache"}}
+  ]
+}

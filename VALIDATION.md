@@ -1,15 +1,11 @@
-# Validation
+# Validation — 15 October 2026
 
-The website was served locally and reviewed in a real browser.
+- Generated complete EN/PL pages and checked all local assets, section targets and public destinations.
+- Automated checks cover regional defaults, manual language priority, query/section preservation, language content parity and file-mode fallback.
+- Consent tests cover unknown/refused/expired consent, local preview suppression, one-time initialization, query/referrer sanitisation, event minimisation, revocation and GA cookie cleanup.
+- Real browser: EN and PL at 320, 390, 768 and 1440 px without horizontal page overflow.
+- Verified the language switch and persisted selection, mobile menu, expandable cases and privacy dialog.
+- Confirmed both product screenshot and portrait load.
+- Created a separate Google Analytics property and web stream next to Folio, using measurement ID G-KNV4H5SGS0.
 
-- Desktop visual review: 1440 px viewport, full page and first screen.
-- Mobile visual review: 390 px viewport, full page.
-- Layout checks: 320, 390, 768 and 1440 px. A card sizing issue at 320 px was fixed and rechecked; no horizontal page overflow remained.
-- Mobile menu: opens, updates its accessible expanded state, and closes when a section is selected.
-- Selected work: expandable Folio perspective opens correctly.
-- Internal section links: all targets exist.
-- Local portrait placeholder: loads correctly.
-- Browser console: no errors observed during the tested flow.
-- JavaScript syntax: checked successfully.
-
-Contact email is configured as `krzysztof.pietrowicz@gmail.com` in both HTML and JavaScript. LinkedIn and GitHub destinations remain labelled placeholders. No email was sent. No public deployment was performed.
+Only consented visits on the approved production hosts are measured. No email was sent, meeting booked or product payment made.

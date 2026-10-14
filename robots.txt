@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chrispietrowicz.com/sitemap.xml

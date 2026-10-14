@@ -1,29 +1,55 @@
-# Krzysztof — personal consulting landing page
+# Chris / Krzysztof Pietrowicz — AI implementation & software engineering
 
-Complete static website, English copy. No build step, packages, external fonts, analytics or third-party assets. Open `index.html` directly or serve this folder with any static HTTP server. Upload its contents to any static web host when ready.
+Bilingual static personal website for chrispietrowicz.com. Full English and Polish HTML, no browser-side translation library or runtime dependencies.
 
-## Before publishing
+## Develop and validate
 
-1. Email is configured as `krzysztof.pietrowicz@gmail.com`. In `script.js`, fill `SITE_CONTACT.linkedin` and `github` with real profile links. Placeholder labels disappear automatically for configured fields.
-2. A professional portrait edited with ImageGen from supplied personal photos is included at `assets/krzysztof-portrait.png` and already displayed on the page. To use a different photo, set `SITE_CONTACT.portrait` to its relative path, for example `assets/krzysztof.jpg`.
-3. Review the biography and the experience claims: 10+ years, aerospace background, Revolut and the project descriptions. These come from the referenced conversation; that conversation is not independent verification.
-4. Replace the conceptual illustrations with real public product images if available. The present visuals are explicitly labelled as concepts. No invented metrics, endorsements or client outcomes are included.
-5. Add your full name, public product links, domain-specific social sharing metadata and privacy information if needed for your eventual hosting setup.
+Requires Node.js 22+.
 
-Contact buttons and the visible email link use `krzysztof.pietrowicz@gmail.com`, including when JavaScript is disabled. LinkedIn and GitHub URLs are still marked placeholders. Contact buttons open the visitor's email application. There is no server-side contact form.
+    node scripts/build.mjs
+    node scripts/check.mjs
 
-## Editing
+Edit src/content.mjs for English/Polish copy and scripts/build.mjs for page structure. Commit generated index.html, en/index.html and pl/index.html alongside source changes. CSS is split between the original styles.css, refinements.css and bilingual.css.
 
-- Content and section structure: `index.html`
-- Colors, typography and responsive layout: `styles.css`
-- Contact configuration and mobile menu: `script.js`
-- Local SVG assets: `assets/`
+The Azure workflow rebuilds, checks and publishes on pushes to main. The existing Azure deployment secret is reused, with no credential values stored in source. The public root, /en/ and /pl/ must be served by a static HTTP server for local testing.
 
-The case studies use native expandable sections, so they work without JavaScript. Core content and navigation remain available without JavaScript. Motion respects the visitor's reduced-motion preference.
+## Language selection
 
-## Local preview
+The root chooses PL when the primary browser language is Polish or the device timezone is Europe/Warsaw; otherwise it chooses EN. A previous manual choice has priority. No GPS permission or third-party IP lookup is requested. This is a regional/language heuristic, not exact physical geolocation. Direct /pl/ and /en/ links always retain the requested language. The small header switch remembers the preference and preserves the current section. Static pages, canonical tags and hreflang support search engines and sharing.
 
-If Python is installed, run `python -m http.server 4173 --bind 127.0.0.1` in this folder, then open http://127.0.0.1:4173. Stop the server with Ctrl+C.
+## Google Analytics
 
-This deliverable is local and has not been publicly published.
-"# chrispietrowicz" 
+A separate GA4 property named Chris Pietrowicz — chrispietrowicz.com was created alongside Folio in the existing Analytics account.
+
+- Web stream: Chris Pietrowicz — website
+- Stream ID: 16131181308
+- Measurement ID: G-KNV4H5SGS0
+- Property ID: 559028737
+- Reports: https://analytics.google.com/analytics/web/#/a1127455p559028737/reports/intelligenthome
+- Reporting timezone: Europe/Warsaw
+- Currency: PLN
+- Enhanced measurement: off. Pageviews and explicit site events are used.
+
+analytics.js uses basic consent: no Google script, cookies or measurement requests before opt-in, or after a saved refusal. Visitors can change their choice from Privacy & analytics in the footer. Consent expires after 180 days. Revocation disables measurement and clears GA cookies. Advertising storage, ad user data, personalisation and Google signals are disabled.
+
+Tracked after consent: pageviews, intro_request, email_click, linkedin_open and folio_open. Events carry the selected language, not email contents or link destinations. Queries and fragments are removed from page_location and page_referrer. Refused visitors, blockers and local previews are not counted; Analytics is not a server access counter.
+
+Analytics runs only on chrispietrowicz.com, www.chrispietrowicz.com and the existing Azure production hostname. Local preview and other hostnames do not send real traffic. The root entry redirect is excluded to avoid a duplicate pageview. No duplicate config is sent when the consent button is pressed repeatedly.
+
+Implementation references:
+- https://developers.google.com/tag-platform/security/guides/consent
+- https://developers.google.com/analytics/devguides/collection/ga4/views
+
+## Copy and factual scope
+
+The offer explicitly covers hands-on AI implementation, operational software, workflow automation, forward-deployed engineering and taking AI-built prototypes/MVPs into production.
+
+The owner confirmed work on implementing AI solutions at Revolut. This is described generically as a contribution within the role. No internal use case, architecture, confidential data, metrics, client engagement or employer endorsement is asserted. Independent services are distinguished from professional experience.
+
+Folio is the public, working product with a genuine screenshot and the supplied URL. The owner confirmed end-to-end delivery. WaterGarden is labelled exploration; the AI workflow example is an offer, not a fabricated client case.
+
+## Contact
+
+Email: krzysztof.pietrowicz@gmail.com
+LinkedIn: https://www.linkedin.com/in/krzysztof-pietrowicz-492744a6/
+GitHub is intentionally omitted from the website. The intro CTA opens a localized email request for 20 minutes; it does not book a calendar slot.
