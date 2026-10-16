@@ -34,7 +34,8 @@ test('both languages are complete static pages with valid local assets and real 
   for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
    const url=match[1];
    if (/^(https?:|mailto:)/.test(url)) continue;
-   const file=path.resolve(root,lang,url.endsWith('/')?url+'index.html':url);
+   const localUrl=url.split(/[?#]/)[0];
+   const file=path.resolve(root,lang,localUrl.endsWith('/')?localUrl+'index.html':localUrl);
    assert.ok(fs.existsSync(file),`Missing ${url} in ${lang}`);
   }
   for(const match of html.matchAll(/href="#([^" ]+)"/g)) assert.ok(html.includes(`id="${match[1]}"`));

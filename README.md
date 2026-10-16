@@ -9,7 +9,7 @@ Requires Node.js 22+.
     node scripts/build.mjs
     node scripts/check.mjs
 
-Edit src/content.mjs for English/Polish copy and scripts/build.mjs for page structure. Commit generated index.html, en/index.html and pl/index.html alongside source changes. CSS is split between the original styles.css, refinements.css and bilingual.css.
+Edit src/content.mjs for English/Polish copy and scripts/build.mjs for page structure. Commit generated index.html, en/index.html and pl/index.html alongside source changes. Layout and motion are in styles.css; bilingual.css styles the analytics controls.
 
 The Azure workflow rebuilds, checks and publishes on pushes to main. The existing Azure deployment secret is reused, with no credential values stored in source. The public root, /en/ and /pl/ must be served by a static HTTP server for local testing.
 
@@ -40,16 +40,16 @@ Implementation references:
 - https://developers.google.com/tag-platform/security/guides/consent
 - https://developers.google.com/analytics/devguides/collection/ga4/views
 
-## Copy and factual scope
+## Offer and interactions
 
-The offer explicitly covers hands-on AI implementation, operational software, workflow automation, forward-deployed engineering and taking AI-built prototypes/MVPs into production.
+Three services describe concrete deliverables: AI implementation, operational applications/automation, and prototype development. The main content is about 58% shorter in Polish and 57% shorter in English than the previous version, counting all main-content text including the hidden scenario panels.
 
-The owner confirmed work on implementing AI solutions at Revolut. This is described generically as a contribution within the role. No internal use case, architecture, confidential data, metrics, client engagement or employer endorsement is asserted. Independent services are distinguished from professional experience.
+The hero has three manually selected, keyboard-accessible tabs illustrating documents, workflows and prototypes. Moving data markers and a soft pulse explain the flow; there are no fabricated live results. Arrow keys, Home and End change tabs. Animations can be paused, respect reduced-motion preferences, and stop while the illustration is off screen. Sections enter once on scroll. Content and navigation remain usable without JavaScript.
 
-Folio is the public, working product with a genuine screenshot and the supplied URL. The owner confirmed end-to-end delivery. WaterGarden is labelled exploration; the AI workflow example is an offer, not a fabricated client case.
+The business-application example is drawn from the owner's CV and anonymized: Excel-based pricing tools became one application. No client name, internal architecture, operational detail or exact performance figure is published. The Revolut mention remains a general statement about professional experience. Reviews Coach and Folio show independent product delivery; the Folio image is a real screenshot. The page does not reproduce a career history, employer project details or CV download.
 
 ## Contact
 
 Email: krzysztof.pietrowicz@gmail.com
 LinkedIn: https://www.linkedin.com/in/krzysztof-pietrowicz-492744a6/
-GitHub is intentionally omitted from the website. The intro CTA opens a localized email request for 20 minutes; it does not book a calendar slot.
+GitHub is intentionally omitted from the website. The contact CTA opens a localized email draft; it does not book a calendar slot.
