@@ -13,6 +13,7 @@
 - Reviews Coach destination responds with HTTP 200 and the expected product title.
 - Inspected the revised professional-project section in PL/EN on desktop and PL on mobile. Checked both languages at 320, 390, 560, 700, 768, 1024 and 1440 px with no horizontal overflow or browser errors.
 - The main evidence is Revolut, PwC, Applause and an ESA project explicitly attributed to GMV. Project descriptions are based on the CV; the owner supplied the ESA relationship.
+- Professional-project descriptions use neutral system/capability language in PL/EN, without first-person narration.
 - Reviews Coach and WaterGarden are compact supporting examples. No employment timeline, internal architecture, countries, counterparties or non-public metrics are included.
 
 Only consented visits on the approved production hosts are measured. No email was sent, meeting booked or product payment made.

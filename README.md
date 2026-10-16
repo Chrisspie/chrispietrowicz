@@ -42,7 +42,7 @@ Implementation references:
 
 ## Offer and interactions
 
-Three services describe concrete deliverables: AI implementation, operational applications/automation, and prototype development. Professional work is the main evidence of experience. Descriptions focus on the system, the owner's contribution and its practical purpose, without a chronological career history.
+Three services describe concrete deliverables: AI implementation, operational applications/automation, and prototype development. Professional work is the main evidence of experience. Project descriptions use neutral language about systems, capabilities and practical applications, without first-person claims or a chronological career history.
 
 The hero has three manually selected, keyboard-accessible tabs illustrating documents, workflows and prototypes. Moving data markers and a soft pulse explain the flow; there are no fabricated live results. Arrow keys, Home and End change tabs. Animations can be paused, respect reduced-motion preferences, and stop while the illustration is off screen. Sections enter once on scroll. Content and navigation remain usable without JavaScript.
 
