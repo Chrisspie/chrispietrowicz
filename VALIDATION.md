@@ -8,9 +8,11 @@
 - Verified mobile menu open/close, Escape and closing after section navigation.
 - Verified scenario tabs with mouse, ArrowRight and Home; animation pause; OS reduced-motion preference; and the privacy dialog.
 - Verified visible navigation and offer with JavaScript disabled; no page errors or real analytics requests in local preview.
-- Confirmed both product screenshot and portrait load.
+- Confirmed the portrait loads. The professional-project section uses text rather than product screenshots.
 - Retained the separate Google Analytics property, using measurement ID G-KNV4H5SGS0.
 - Reviews Coach destination responds with HTTP 200 and the expected product title.
-- Inspected desktop/mobile screenshots. Main-content text reduced from 934 to 390 words in Polish and 1,055 to 451 in English (includes all scenario text, excludes privacy controls).
+- Inspected the revised professional-project section in PL/EN on desktop and PL on mobile. Checked both languages at 320, 390, 560, 700, 768, 1024 and 1440 px with no horizontal overflow or browser errors.
+- The main evidence is Revolut, PwC, Applause and an ESA project explicitly attributed to GMV. Project descriptions are based on the CV; the owner supplied the ESA relationship.
+- Reviews Coach and WaterGarden are compact supporting examples. No employment timeline, internal architecture, countries, counterparties or non-public metrics are included.
 
 Only consented visits on the approved production hosts are measured. No email was sent, meeting booked or product payment made.

@@ -40,7 +40,7 @@ test('both languages are complete static pages with valid local assets and real 
   }
   for(const match of html.matchAll(/href="#([^" ]+)"/g)) assert.ok(html.includes(`id="${match[1]}"`));
   assert.ok(html.includes('https://www.linkedin.com/in/krzysztof-pietrowicz-492744a6/'));
-  assert.ok(html.includes('thankful-coast-085c22603.2.azurestaticapps.net'));
+  assert.ok(html.includes('https://reviewscoach.com/'));
  }
 });
 const analyticsSource=fs.readFileSync(path.join(root,'analytics.js'),'utf8');

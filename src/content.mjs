@@ -7,7 +7,7 @@ export const content = {
     intro: 'Wdrażam AI, buduję aplikacje dla firm i rozwijam prototypy w gotowe produkty.',
     primary: 'Porozmawiajmy o projekcie', secondary: 'Zobacz ofertę',
     heroNote: 'Od ustalenia, co warto zbudować, po uruchomienie.',
-    proof: [['10+ lat', 'tworzenia oprogramowania'], ['Revolut', 'doświadczenie w fintech i AI'], ['Od A do Z', 'analiza, kod i wdrożenie']],
+    proof: [['10+ lat', 'tworzenia oprogramowania'], ['Revolut', 'systemy fintech i AI'], ['PwC · Applause', 'narzędzia i platformy B2B'], ['Projekt ESA', 'realizowany w GMV']],
     workflowLabel: 'CO MOŻEMY USPRAWNIĆ?', workflowTabs: ['Dokumenty', 'Procesy', 'Prototyp'],
     workflow: [
       {input: 'Dokumenty / PDF', engine: 'AI + weryfikacja', output: 'Dane w systemie', title: 'Z dokumentu do działania.', rows: ['Odczyt potrzebnych danych', 'Wyjątki do sprawdzenia', 'Zapis w Twoim systemie']},
@@ -23,14 +23,18 @@ export const content = {
     ],
     deliverable: 'OTRZYMUJESZ', howLabel: 'JAK ZACZYNAMY',
     how: ['Pokazujesz proces lub prototyp.', 'Ustalamy zakres pierwszej wersji.', 'Buduję, sprawdzamy, wdrażamy.'],
-    workEyebrow: '02 / WYBRANE REALIZACJE', workTitle: 'Takie rzeczy już budowałem.',
-    excelLabel: 'APLIKACJA DLA FIRMY', excelTitle: 'Z arkuszy do jednej aplikacji.',
-    excelText: 'Narzędzia w Excelu zamieniłem w aplikację do wyceny produktów. Zespół dostał jeden proces i szybsze obliczenia.',
-    excelScope: 'Analiza · UX · Backend · Frontend · Wdrożenie',
-    excelBefore: 'Wiele arkuszy', excelAfter: 'Jedna aplikacja', excelResult: 'Wycena produktów',
-    folioLabel: 'WŁASNY PRODUKT', folioText: 'Skany PDF zamieniane w EPUB i przeszukiwalne dokumenty. Kompletny produkt: od UX po płatności i wdrożenie.',
-    reviewLabel: 'WŁASNY PRODUKT · AI', reviewText: 'Rozszerzenie Chrome pomagające firmom odpowiadać na opinie Google. AI, panel, logowanie i subskrypcje.',
-    folioCta: 'Zobacz Folio', reviewCta: 'Zobacz Reviews Coach', reviewVisual: ['Opinie klientów', 'AI', 'Odpowiedź do sprawdzenia'],
+    workEyebrow: '02 / WYBRANE PROJEKTY ZAWODOWE', workTitle: 'Systemy dla biznesu i nauki.',
+    professionalWork: [
+      {company: 'Revolut', context: 'FINTECH · SYSTEMY PRODUKCYJNE', title: 'Systemy finansowe, integracje i AI.', description: 'Projektuję i rozwijam systemy fintech, integracje regulacyjne oraz uczestniczę we wdrażaniu rozwiązań AI.', contribution: 'Biorę odpowiedzialność za projekt rozwiązania, uzgodnienia między zespołami i implementację — aż po wdrożenie.', scope: ['Systemy rozproszone', 'Integracje', 'Wdrażanie AI']},
+      {company: 'PwC', context: 'ANALIZA DANYCH · RYZYKO', title: 'Silnik oceny ryzyka transakcji.', description: 'Zbudowałem silnik łączący dane z wielu zbiorów i stosujący konfigurowalne reguły do wykrywania podejrzanych transakcji.', contribution: 'Nowe scenariusze oceny ryzyka bez pisania odrębnej logiki dla każdego przypadku.', scope: ['Reguły biznesowe', 'Przetwarzanie danych']},
+      {company: 'Applause', context: 'PLATFORMA B2B · SAAS', title: 'Rozwój działającej platformy SaaS.', description: 'Przebudowałem onboarding klientów i zbudowałem integrację z Jirą. Rozwijałem mikroserwisy i modernizowałem istniejący system.', contribution: 'Mniej powtarzalnej pracy wsparcia i funkcje dostępne bezpośrednio w narzędziu klienta.', scope: ['Onboarding', 'Integracje', 'Modernizacja']},
+      {company: 'ESA', context: 'PROJEKT REALIZOWANY W GMV', title: 'Precyzyjny pomiar czasu z GNSS.', description: 'W GMV tworzyłem aplikację dla projektu ESA, wspierającą transfer czasu i częstotliwości na podstawie danych GNSS.', contribution: 'Dane z systemu służyły naukowcom do kalibracji zegarów atomowych.', scope: ['Oprogramowanie naukowe', 'Backend i frontend']}
+    ],
+    ownProductsLabel: 'WŁASNE PRODUKTY', reviewCta: 'Zobacz Reviews Coach',
+    ownProducts: [
+      {name: 'Reviews Coach', type: 'AI · B2B SAAS', text: 'Rozszerzenie Chrome, backend i panel dla firm. Integracja AI, logowanie i płatne subskrypcje.'},
+      {name: 'WaterGarden', type: 'ANDROID · PRODUKT MOBILNY', text: 'Aplikacja łącząca budowanie nawyków z grywalizacją. W zamkniętych testach Google Play.'}
+    ],
     aboutEyebrow: '03 / Z KIM PRACUJESZ', aboutTitle: 'Krzysztof Pietrowicz.',
     aboutText: 'Ponad 10 lat tworzenia oprogramowania, obecnie w Revolut. Doświadczenie w systemach fintech, integracjach i wdrażaniu AI.',
     aboutWork: 'Pracuję bezpośrednio z Tobą i Twoim zespołem. Ustalam zakres, projektuję rozwiązanie, piszę kod i doprowadzam do wdrożenia.',
@@ -53,7 +57,7 @@ export const content = {
     role: 'AI · AUTOMATION · SOFTWARE', hero: ['AI and applications.', 'Less manual work.'],
     intro: 'I implement AI, build business applications and turn prototypes into products ready to use.',
     primary: 'Discuss your project', secondary: 'Explore services', heroNote: 'From deciding what to build to putting it into use.',
-    proof: [['10+ years', 'building software'], ['Revolut', 'fintech & AI experience'], ['End to end', 'discovery, code & deployment']],
+    proof: [['10+ years', 'building software'], ['Revolut', 'fintech systems & AI'], ['PwC · Applause', 'B2B tools & platforms'], ['ESA project', 'delivered at GMV']],
     workflowLabel: 'WHAT COULD WORK BETTER?', workflowTabs: ['Documents', 'Workflows', 'Prototype'],
     workflow: [
       {input: 'Documents / PDF', engine: 'AI + review', output: 'Data in your system', title: 'From document to action.', rows: ['Extract the data you need', 'Flag exceptions for review', 'Save to your existing system']},
@@ -69,13 +73,18 @@ export const content = {
     ],
     deliverable: 'YOU GET', howLabel: 'HOW WE START',
     how: ['Show me the workflow or prototype.', 'We agree on the first release.', 'I build. We test and launch.'],
-    workEyebrow: '02 / SELECTED WORK', workTitle: 'Software I’ve already delivered.',
-    excelLabel: 'BUSINESS APPLICATION', excelTitle: 'From spreadsheets to one app.',
-    excelText: 'I turned Excel-based tools into a product-pricing application. The team got one workflow and faster calculations.',
-    excelScope: 'Discovery · UX · Backend · Frontend · Deployment', excelBefore: 'Multiple spreadsheets', excelAfter: 'One application', excelResult: 'Product pricing',
-    folioLabel: 'OWN PRODUCT', folioText: 'Scanned PDFs turned into EPUB and searchable documents. A complete product, from UX to payments and deployment.',
-    reviewLabel: 'OWN PRODUCT · AI', reviewText: 'A Chrome extension helping businesses respond to Google reviews. AI, dashboard, authentication and subscriptions.',
-    folioCta: 'Explore Folio', reviewCta: 'Explore Reviews Coach', reviewVisual: ['Customer reviews', 'AI', 'Reply ready for review'],
+    workEyebrow: '02 / SELECTED PROFESSIONAL WORK', workTitle: 'Systems for business and science.',
+    professionalWork: [
+      {company: 'Revolut', context: 'FINTECH · PRODUCTION SYSTEMS', title: 'Financial systems, integrations and AI.', description: 'I design and develop fintech systems and regulatory integrations, and contribute to implementing AI solutions.', contribution: 'I own solution design, cross-team alignment and implementation through to production delivery.', scope: ['Distributed systems', 'Integrations', 'AI implementation']},
+      {company: 'PwC', context: 'DATA ANALYSIS · RISK', title: 'Transaction risk-assessment engine.', description: 'I built an engine that correlates multiple datasets and applies configurable rules to identify suspicious transactions.', contribution: 'New risk scenarios without writing separate logic for every individual case.', scope: ['Business rules', 'Data processing']},
+      {company: 'Applause', context: 'B2B PLATFORM · SAAS', title: 'Engineering for an established SaaS platform.', description: 'I redesigned customer onboarding and built a Jira integration, alongside microservices and modernisation of the existing platform.', contribution: 'Less recurring support work and product functionality available directly in the customer’s tools.', scope: ['Onboarding', 'Integrations', 'Modernisation']},
+      {company: 'ESA', context: 'PROJECT DELIVERED AT GMV', title: 'Precise time transfer with GNSS.', description: 'At GMV, I developed an application for an ESA project supporting time and frequency transfer using GNSS data.', contribution: 'Scientists used the system’s data to calibrate atomic clocks.', scope: ['Scientific software', 'Backend & frontend']}
+    ],
+    ownProductsLabel: 'INDEPENDENT PRODUCTS', reviewCta: 'Explore Reviews Coach',
+    ownProducts: [
+      {name: 'Reviews Coach', type: 'AI · B2B SAAS', text: 'A Chrome extension, backend and business dashboard. AI integration, authentication and paid subscriptions.'},
+      {name: 'WaterGarden', type: 'ANDROID · MOBILE PRODUCT', text: 'An app combining habit building with gamification. In closed testing on Google Play.'}
+    ],
     aboutEyebrow: '03 / WHO YOU WORK WITH', aboutTitle: 'Krzysztof Pietrowicz.',
     aboutText: '10+ years building software, currently at Revolut. Experience across fintech systems, integrations and AI implementation.',
     aboutWork: 'I work directly with you and your team. I scope the work, design the solution, write the code and take it through deployment.',
