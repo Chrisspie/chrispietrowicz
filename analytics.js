@@ -80,7 +80,7 @@
   document.querySelectorAll('.privacy-open').forEach(button => button.addEventListener('click', () => { updateUI(); dialog.showModal(); }));
   document.querySelector('.privacy-close').addEventListener('click', () => dialog.close());
   document.addEventListener('click', event => {
-    const link = event.target.closest('a[data-track]');
+    const link = event.target.closest('[data-track]');
     if (link && live && started && choice === 'granted') window.gtag('event', link.dataset.track, { site_language: document.documentElement.lang });
   });
   updateUI();
